@@ -16,11 +16,11 @@ $phone = strip_tags(htmlspecialchars($_POST['phone']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
    
 // Create the email and send the message
-$to = 'abonnin@apdrh.mx';
+$to = 'contacto@apdrh.mx';
 $email_subject = "Mensaje de:  $name";
-$email_body = "Se ha recibido un nuevo mensaje.\n\n"."Estos son los detalles:\n\nNombre: $name\n\nEmail: $email_address\n\nTel: $phone\n\nMensaje:\n$message";
-$headers = "From: noreply@adprh.mx\n";
-$headers .= "Reply: $email_address";
+$email_body = "Se ha recibido un nuevo mensaje.\n\n"."Estos son los detalles:\n\nNombre: $name\n\nEmail: $email_address\n\nTel: $phone\n\nMessage:\n$message";
+$headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+$headers .= "Reply-To: $email_address";
 mail($to,$email_subject,$email_body,$headers);
-return true;         
+return true;
 ?>
