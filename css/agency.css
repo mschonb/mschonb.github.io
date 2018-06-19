@@ -52,8 +52,9 @@ section h3.section-subheading {
   text-transform: none;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-.bd-purp {
-  background-color: #cb4398;
+.bd-OJ {
+  /*background-color: #E87F12;*/
+ color: #E87F12;
   padding-left: 4px;
   padding-right: 4px;
   font-size: 110%;
@@ -80,7 +81,9 @@ section h3.section-subheading {
   background-color: #E87F12;
   border-color: #E87F12;
 }
-
+.double-space{
+    margin-bottom: 60px;
+}
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
   background-color: #fec810 !important;
   border-color: #fec810 !important;
