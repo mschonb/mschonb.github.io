@@ -48,9 +48,15 @@ section h3.section-subheading {
   font-size: 16px;
   font-weight: 400;
   font-style: italic;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
   text-transform: none;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.bd-purp {
+  background-color: #cb4398;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 110%;
 }
 
 @media (min-width: 768px) {
@@ -58,6 +64,7 @@ section h3.section-subheading {
     padding: 150px 0;
   }
 }
+
 
 .btn {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -131,7 +138,7 @@ img::-moz-selection {
   font-weight: 400;
   padding: 0.75em 0;
   letter-spacing: 1px;
-  color: white;
+  color: whitesmoke;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -172,7 +179,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/management_darker.jpg");
+  background-image: url("../img/business-people.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -388,6 +395,9 @@ header.masthead .intro-text .intro-heading {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   background-color: #212529;
+}
+.txt-center{
+    text-align: justify;
 }
 
 .timeline {
