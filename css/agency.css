@@ -180,7 +180,7 @@ img::-moz-selection {
   }
 }
 .bg-l{
-    background-color: rgba(128, 128, 128,0.2);
+    background-color: rgba(128, 128, 128,0.12);
 }
 header.masthead {
   text-align: center;
