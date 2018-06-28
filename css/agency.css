@@ -104,6 +104,10 @@ section h3.section-subheading {
   text-shadow: none;
 }
 
+.extra-padding-bot{
+  padding-bottom: 7vh;
+}
+
 img::selection {
   background: transparent;
 }
