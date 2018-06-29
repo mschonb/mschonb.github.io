@@ -76,7 +76,12 @@ section h3.section-subheading {
   font-size: 18px;
   padding: 20px 40px;
 }
-
+.txt-white{
+  color:white !important;
+}
+.extra-margin-bot{
+  margin-bottom: 4vh;
+}
 .btn-primary {
   background-color: #E87F12;
   border-color: #E87F12;
@@ -476,6 +481,16 @@ header.masthead .intro-text .intro-heading {
   border: 7px solid #e9ecef;
   border-radius: 100%;
   background-color: #E87F12;
+}
+
+.center-iamge{
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  margin-left: 0;
+  text-align: center;
+  background-color: #E87F12;
+  display: block;
 }
 
 .timeline > li .timeline-image h4 {
