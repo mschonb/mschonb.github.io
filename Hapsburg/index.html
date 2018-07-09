@@ -1,883 +1,1033 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Hapsburg Consulting</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Inicio | Hapsburg Consulting</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/pe-icons.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/faviconBIG.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/ico/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/ico/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" href="images/ico/apple-touch-icon-57x57.png">
 
-  <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+    <script type="text/javascript">
+    jQuery(document).ready(function($){
+	'use strict';
+      	jQuery('body').backstretch([
+	        "images/bg/bg1.jpg",
+	        "images/bg/bg2.jpg",
+	        "images/bg/bg3.jpg"
+	    ], {duration: 5000, fade: 500, centeredY: true });
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
-
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-
+		$("#mapwrapper").gMap({ controls: false,
+         	scrollwheel: false,
+         	markers: [{
+                latitude:20.616844,
+                longitude: -100.349296,
+          	icon: { image: "images/marker.png",
+              	iconsize: [44,44],
+          		iconanchor: [12,46],
+          		infowindowanchor: [12, 0] } }],
+          	icon: { 
+              	image: "images/marker.png", 
+             	iconsize: [26, 46],
+              	iconanchor: [12, 46],
+              	infowindowanchor: [12, 0] },
+            latitude:20.616844,
+            longitude: -100.349296,
+          	zoom: 8.2    });
+    });
+    </script>
 </head>
+<!--/head-->
 
-<body id="page-top">
-
-  <!--==========================
-    Header
-  ============================-->
-  <header id="header">
-    <!--<div class="container-fluid">-->
-
-      <!--<div id="logo" class="pull-left">-->
-
-        <!--<a href="#intro"><img src="img/logo64x64.png" alt="" title="" /></a>-->
-        <!--<h1><a href="#intro" class="scrollto">Hapsburg Cons</a></h1>-->
-      <!--</div>-->
-
-      <!--<nav id="nav-menu-container">-->
-        <!--<ul class="nav-menu">-->
-          <!--<li class="menu-active"><a href="#intro">Home</a></li>-->
-          <!--<li><a href="#about">About Us</a></li>-->
-          <!--<li><a href="#services">Services</a></li>-->
-          <!--<li><a href="#portfolio">Portfolio</a></li>-->
-          <!--<li><a href="#team">Team</a></li>-->
-          <!--<li class="menu-has-children"><a href="">Drop Down</a>-->
-            <!--<ul>-->
-              <!--<li><a href="#">Drop Down 1</a></li>-->
-              <!--<li><a href="#">Drop Down 3</a></li>-->
-              <!--<li><a href="#">Drop Down 4</a></li>-->
-              <!--<li><a href="#">Drop Down 5</a></li>-->
-            <!--</ul>-->
-          <!--</li>-->
-          <!--<li><a href="#contact">Contact</a></li>-->
-        <!--</ul>-->
-      <!--</nav>&lt;!&ndash; #nav-menu-container &ndash;&gt;-->
-
-    <!--</div>-->
-
-    <nav id="nav-menu-container" class="navbar navbar-fluid navbar-expand-lg navbar-dark fixed-top navbar-shrink">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" id="brand" href="#page-top">
-          <h4>
-          <img src="img/logo64x64.png"> Hapsburg Consulting</h4>
-        </a>
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="#page-top">Inicio.</a> </li>
-          <li><a href="#about">Acerca de Nosotros.</a></li>
-          <li><a href="#portfolio">Compañías.</a> </li>
-          <li><a href="#team">Equipo.</a> </li>
-          <li><a href="#contact">Contacto.</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header><!-- #header -->
-
-  <!--==========================
-    Intro Section
-  ============================-->
-  <section id="intro">
-    <div class="intro-container">
-      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
-
-        <ol class="carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
-
-          <div class="carousel-item active">
-            <div class="carousel-background"><img src="img/intro-carousel/1.jpg" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2>Hapsburg Consulting</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Mas Información</a>
-              </div>
+<>
+<div id="preloader"></div>
+    <header class="navbar navbar-inverse navbar-fixed-top " role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Menu</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                 <a class="navbar-brand" href="#main-slider"><h1><span class="bounce-in"><img src="images/logo/Logo_Outline32x32.png"></span> HAPSBURG <span class="hidden-xs">CONSULTING</span></h1></a>
             </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="carousel-background"><img src="img/intro-carousel/2.jpg" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2>ADP - RH</h2>
-                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Mas Información</a>
-              </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#main-slider">Inicio</a></li>
+                    <li><a href="#quienes">¿Quiénes Somos?</a></li>
+                    <li><a href="#quienes">Servicios</a></li>
+                    <li><a href="#portfolio">Compañías</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
             </div>
-          </div>
+        </div>
+    </header>
 
-          <div class="carousel-item">
-            <div class="carousel-background"><img src="img/intro-carousel/3.jpg" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2>VecoDico</h2>
-                <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Mas Información</a>
-              </div>
+    <!--/header-->
+
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content center centered">
+                                	<span class="home-icon2 bounce-in"><img src="images/logo/Logo_Outline.png" alt=""></span>
+                                    <h2 class="boxed animation animated-item-1 fade-down text-uppercase">Hapsburg Consulting</h2><br>
+                                    <p class="boxed animation animated-item-2 fade-up">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam aperiam at aut dolorum ea eos eveniet inventore ipsam magni modi placeat possimus qui quia, quisquam repellendus rerum tempore ut?"</p>
+                                    <br>
+                                    <a class="btn btn-md animation bounce-in" href="#services">Mas Información</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+    </section><!--/#main-slider-->
+
+    <div id="content-wrapper">
+        <section id="quienes" class="white">
+            <div class="container">
+            <div class="gap"></div> 
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">¿Quiénes Somos?</h2>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ea error esse est inventore.</p>
+                        </div>                
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-sign-out fa fa-md"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Outsourcing</h3>
+                                <p>Nay middleton him admitting consulted and behaviour son household. Recurred advanced he oh together entrance speedily suitable. Ready tried gay state fat could boy its among shall.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-thumbs-o-up fa fa-md"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Mercadotecnia</h3>
+                                <p>Unfeeling agreeable suffering it on smallness newspaper be. So come must time no as. Do on unpleasing possession as of unreserved.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-ticket fa fa-md"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Organización de Eventos</h3>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                </div><!--/.row-->
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-paperclip fa fa-md"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Publicidad</h3>
+                                <p>Yet joy exquisite put sometimes enjoyment perpetual now. Behind lovers eat having length horses vanity say had its</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-cogs fa fa-md"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Desarrollo de Software</h3>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-google-plus fa fa-md"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Ubicación Web</h3>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                </div><!--/.row-->
             </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="carousel-background"><img src="img/intro-carousel/4.jpg" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2>Coastal</h2>
-                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum.</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Mas Información</a>
-              </div>
+            <div class="gap"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">Our Skills</h2>
+                            <hr>
+                            <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
+                        </div>               
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="container">     
+            <div class="row">            
+	                <div class="col-md-3 extra-bot-margin">
+	                    <div class="tile-progress tile-red bounce-in">
+	                        <div class="tile-header">
+	                            <h3>Outsourcing</h3>
+	                            <span>Outsourcing de Nóminas</span>
+	                        </div>
+	                        <div class="tile-progressbar">
+	                            <span data-fill="65.5%" style="width: 100.0%;"></span>
+	                        </div>
+	                        <div class="tile-footer">
+	                            <h4>
+	                                <span class="pct-counter counter">100.0</span>%
+	                            </h4>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-3">
+	                    <div class="tile-progress tile-cyan bounce-in">
+	                        <div class="tile-header">
+	                            <h3 class=>Mercadotecnia</h3>
+	                            <span >Vendemos tu empresa y tu negocio</span>
+	                        </div>
+	                        <div class="tile-progressbar">
+	                            <span data-fill="98.5%" style="width: 98.5%;"></span>
+	                        </div>
+	                        <div class="tile-footer">
+	                            <h4>
+	                                <span class="pct-counter counter">98.5</span>%
+	                            </h4>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-3">
+	                    <div class="tile-progress tile-primary bounce-in">
+	                        <div class="tile-header">
+	                            <h3>Desarollo Web</h3>
+	                            <span>Desarollamos plataformas y páginas Web</span>
+	                        </div>
+	                        <div class="tile-progressbar">
+	                            <span data-fill="90%" style="width: 90%;"></span>
+	                        </div>
+	                        <div class="tile-footer">
+	                            <h4>
+	                                <span class="pct-counter counter">90</span>%
+	                            </h4>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="col-md-3">
+	                    <div class="tile-progress tile-pink bounce-in">
+	                        <div class="tile-header">
+	                            <h3>Asesorías</h3>
+	                            <span>Legales, Fiscales, Recursos Humanos, etc.</span>
+	                        </div>
+	                        <div class="tile-progressbar">
+	                            <span data-fill="10%" style="width: 10%;"></span>
+	                        </div>
+	                        <div class="tile-footer">
+	                            <h4>
+	                                <span class="pct-counter counter">10</span>%
+	                            </h4>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div><!--/.row-->
+	            <div class="gap"></div>
+        	</div>
+        </section>
 
-          <div class="carousel-item">
-            <div class="carousel-background"><img src="img/intro-carousel/5.jpg" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2>Otra</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Mas Información</a>
-              </div>
+
+		<section id="single-quote" class="divider-section"> 	            	        
+	            <div class="container">
+	            	<div class="gap"></div> 
+	                <div class="row">                        
+	                    <div class='col-md-offset-2 col-md-8 fade-up'>
+	                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+	                            <div class="carousel-inner">
+	                                <div class="item active">
+	                                    <blockquote>
+	                                        <div class="row">
+	                                            <div class="col-sm-3 text-center">
+	                                                <img class="img-responsive" src="images/team/team01.jpg" style="width: 100px;height:100px;">
+	                                            </div>
+	                                            <div class="col-sm-9">
+	                                                <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+	                                                <small>Someone famous</small>
+	                                            </div>
+	                                        </div>
+	                                    </blockquote>
+	                                </div>	                                
+	                            </div>                                     
+	                        </div> 
+	                    </div>
+	                </div>
+	                <div class="gap"></div>
+	      		</div>
+  		</section>
+
+        <section id="about-us" class="white">
+        	<div class="container">
+	            <div class="gap"></div>
+	            <div class="row">
+	                <div class="col-md-12">
+	                    <div class="center gap fade-down section-heading">
+	                        <h2 class="main-title">¿Quiénes Somos?</h2>
+	                        <hr>
+	                        <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
+	                    </div>                
+	                </div>
+	            </div>
+	            <div class="row">
+	                <div class="col-md-10 col-md-offset-1 fade-up">
+	                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+
+	                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+	                </div>
+	                <div class="col-md-4 fade-up">
+
+	                </div>
+	            </div>
+               <div class="gap"></div>
+                <div class="row fade-up">
+                    <div class="col-md-6">
+                      	<div class="testimonial-list-item">
+                        <img class="pull-left img-responsive quote-author-list" src="images/team/team01.jpg">
+                            <blockquote>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <small>Empleado puesto <cite title="Source Title">Hapsburg</cite></small>
+                            </blockquote>
+                        </div>
+                        <div class="testimonial-list-item">
+                        <img class="pull-left img-responsive quote-author-list" src="images/team/team01.jpg">
+                            <blockquote>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <small>Empleado puesto <cite title="Source Title">Hapsburg</cite></small>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="testimonial-list-item">
+                        <img class="pull-left img-responsive quote-author-list" src="images/team/team01.jpg">
+                            <blockquote>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <small>Empleado puesto <cite title="Source Title">Hapsburg</cite></small>
+                            </blockquote>
+                        </div>
+                        <div class="testimonial-list-item">
+                        <img class="pull-left img-responsive quote-author-list" src="images/team/team01.jpg">
+                            <blockquote>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <small>Empleado puesto <cite title="Source Title">Hapsburg</cite></small>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+	            <div class="gap"></div>
+	            <div class="center gap fade-down section-heading">
+	                <h2 class="main-title">Directivos</h2>
+	                <hr>
+	                <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
+	            </div> 
+	            <div class="gap"></div>
+
+	            <div id="meet-the-team" class="row">
+	                <div class="col-md-4 col-xs-6">
+	                    <div class="center team-member">
+                            <div class="team-image">
+                                <img class="img-responsive img-thumbnail bounce-in" src="images/team/team01.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/team/team01.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                </div>  
+                            </div>
+	                        <div class="team-content fade-up">
+	                            <h5>Ricardo I. Schonbrunn Kuhne<small class="role muted">Director General</small></h5>
+	                            <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
+	                            <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+	                        </div>
+	                    </div>
+	                </div>
+
+	                <div class="col-md-4 col-xs-6">
+	                    <div class="center team-member">
+                            <div class="team-image">
+                                <img class="img-responsive img-thumbnail bounce-in" src="images/team/team01.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/team/team01.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                </div>  
+                            </div>
+	                        <div class="team-content fade-up">
+	                            <h5>Ramón Cuevas Guerra<small class="role muted">Director Financiero</small></h5>
+	                            <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
+	                            <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+	                        </div>
+	                    </div>
+	                </div>        
+	                <div class="col-md-4 col-xs-6">
+	                    <div class="center team-member">
+                            <div class="team-image">
+                                <img class="img-responsive img-thumbnail bounce-in" src="images/team/team01.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/team/team03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                </div>  
+                            </div>
+	                        <div class="team-content fade-up">
+	                            <h5>Edgar Rossell Escamilla<small class="role muted">Socio Director</small></h5>
+	                            <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
+	                            <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div><!--/#meet-the-team-->
+	            <div class="gap"></div>  
+	            <div class="gap"></div>   
+            </div>      
+        </section>
+
+        <section id="stats" class="divider-section">
+            <div class="gap"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="pe-7s-timer bounce-in"></span></span>
+                            <h1><span class="counter">246000</span></h1>
+                            <h3>WOW MUCHO</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="pe-7s-light bounce-in"></span></span>
+                            <h1><span class="counter">16875</span></h1>
+                            <h3>ESE ES UN NUM GRANDE</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="pe-7s-graph1 bounce-in"></span></span>
+                            <h1><span class="counter">99999999</span></h1>
+                            <h3>CUANTOS 9's</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="pe-7s-box2 bounce-in"></span></span>
+                            <h1><span class="counter">54875</span></h1>
+                            <h3>JAMONES ENTREGADOS</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="gap"></div> 
+        </section>
 
+        <!--==========================
+       Portfolio Section
+     ============================-->
+        <section id="portfolio" class="white">
+            <div class="container">
+                        <h3 class="main-title">Nuestras Empresas</h3>
+                        <hr>
+                        <p class="text-center text-uppercase">She evil face fine calm have now. Separate screened he outweigh of distance landlord.</p>
+
+
+                    <div class="row portfolio-container">
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-consulting wow fadeInUp">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="images/portfolio/folio01.jpg" class="img-fluid" alt="">
+                                    <a href="http://www.adprh.mx" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Página"><i class="fa fa-paperclip"></i></a>
+                                    <a href="#" class="link-details" title="Más Información"><i class="fa fa-eye center"></i></a>
+                                </figure>
+
+                                <div class="portfolio-info">
+                                    <h4><a class="text-uppercase" href="#">ADP-RH</a></h4>
+                                    <p>Consulting</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="images/portfolio/folio01.jpg" class="img-fluid" alt="">
+                                    <a href="img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Página"><i class="fa fa-paperclip"></i></a>
+                                    <a href="#" class="link-details" title="Más Información"><i class="fa fa-eye"></i></a>
+                                </figure>
+
+                                <div class="portfolio-info">
+                                    <h4><a href="#">VECODICO</a></h4>
+                                    <p>Nominas </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-consulting wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="portfolio-wrap">
+                                <figure>
+                                    <img src="images/portfolio/folio01.jpg" class="img-fluid" alt="">
+                                    <a href="img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Página"><i class="fa fa-paperclip"></i></a>
+                                    <a href="#" class="link-details" title="Más Información"><i class="fa fa-eye"></i></a>
+                                </figure>
+
+                                <div class="portfolio-info">
+                                    <h4><a class="text-uppercase" href="#">COASTAL</a></h4>
+                                    <p>Consulting</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+        </section><!-- #portfolio -->
+
+            <section id="testimonial-carousel" class="divider-section">
+            <div class="gap"></div>
+	            <div class="container">
+	                <div class="row">
+                    	<div class="center gap fade-down section-heading">
+                            <h2 class="main-title">¿Qué Opinan Nuestros Clientes?</h2>
+                            <hr>
+                            <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
+                            <div class="gap"></div>
+                        </div>                         
+	                    <div class='col-md-offset-2 col-md-8 fade-up'>
+	                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+	                            <!-- Bottom Carousel Indicators -->
+	                            <ol class="carousel-indicators">
+	                                <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+	                                <li data-target="#quote-carousel" data-slide-to="1"></li>
+	                                <li data-target="#quote-carousel" data-slide-to="2"></li>
+	                            </ol>                                
+	                            <!-- Carousel Slides / Quotes -->
+	                            <div class="carousel-inner">                                
+	                              <!-- Quote 1 -->
+	                                <div class="item active">
+	                                    <blockquote>
+	                                        <div class="row">
+	                                            <div class="col-sm-3 text-center">
+	                                                <img class="img-responsive" src="images/team/team01.jpg" style="width: 100px;height:100px;">
+	                                            </div>
+	                                            <div class="col-sm-9">
+	                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolorem eaque esse iure non reiciendis rem sed voluptatum! Eaque enim excepturi fuga harum id incidunt magni nulla placeat quaerat repudiandae.</p>
+	                                                <small>Algún Famoso</small>
+	                                            </div>
+	                                        </div>
+	                                    </blockquote>
+	                                </div>
+	                                <!-- Quote 2 -->
+	                                <div class="item">
+	                                    <blockquote>
+	                                        <div class="row">
+	                                            <div class="col-sm-3 text-center">
+	                                                <img class="img-responsive" src="images/team/team02.jpg" style="width: 100px;height:100px;">
+	                                            </div>
+	                                            <div class="col-sm-9">
+	                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+	                                                <small>Algún Famoso</small>
+	                                            </div>
+	                                        </div>
+	                                    </blockquote>
+	                                </div>
+	                                <!-- Quote 3 -->
+	                                <div class="item">
+	                                    <blockquote>
+	                                        <div class="row">
+	                                            <div class="col-sm-3 text-center">
+	                                                <img class="img-responsive" src="images/team/team03.jpg" style="width: 100px;height:100px;">
+	                                            </div>
+	                                            <div class="col-sm-9">
+	                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.</p>
+	                                                <small>Someone famous</small>
+	                                            </div>
+	                                        </div>
+	                                    </blockquote>
+	                                </div>
+	                            </div>                                     
+	                        </div> 
+	                    </div>
+	                </div>
+	                <div class="gap"></div>
+	      		</div>
+      		</section>
+
+            <section id="blog" class="white">
+                <div class="container">
+                    <div class="center gap fade-down section-heading">
+                   		<div class="gap"></div>
+                        <h2 class="main-title">Nuestro Blog Empresarial</h2>
+                        <hr>
+                        <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
+                    </div>  
+                    <div class="gap"></div>
+                    <div class="row">
+	                    <div class="col-md-4">
+	                        <div class="post">
+	                            <div class="post-img-content">
+	                                <img src="images/portfolio/folio02.jpg" class="img-responsive" />
+	                                <div class="overlay">
+	                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
+	                                </div>
+	                            </div>
+	                            <div class="content">
+	                                <h2 class="post-title">Post Title</h2>
+	                                <div class="author">
+	                                    <i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> <time datetime="2014-01-20">April 11th, 2014</time>
+	                                </div>
+	                                <div>
+	                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+	                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+	                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+	                                </div>
+	                                <div class="read-more-wrapper">
+	                                    <a href="#" class="btn btn-outlined btn-primary">Read more</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-4">
+	                        <div class="post">
+	                            <div class="post-img-content">
+	                                <img src="images/portfolio/folio06.jpg" class="img-responsive" />
+	                                <div class="overlay">
+	                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
+	                                </div>
+	                            </div>
+	                            <div class="content">
+	                                <h2 class="post-title">Post Title</h2>
+	                                <div class="author">
+	                                    <i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> <time datetime="2014-01-20">April 11th, 2014</time>
+	                                </div>
+	                                <div>
+	                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+	                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+	                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+	                                </div>
+	                                <div class="read-more-wrapper">
+	                                    <a href="#" class="btn btn-outlined btn-primary">Read more</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-4">
+	                        <div class="post">
+	                            <div class="post-img-content">
+	                                <img src="images/portfolio/folio11.jpg" class="img-responsive" />
+	                                <div class="overlay">
+	                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
+	                                </div>
+	                            </div>
+	                            <div class="content">
+	                                <h2 class="post-title">Post Title</h2>
+	                                <div class="author">
+	                                    <i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> <time datetime="2014-01-20">April 11th, 2014</time>
+	                                </div>
+	                                <div>
+	                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+	                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+	                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+	                                </div>
+	                                <div class="read-more-wrapper">
+	                                    <a href="#" class="btn btn-outlined btn-primary">Read more</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+                    </div> 
+                    <div class="gap"></div>
+                    <div class="row">
+	                    <div class="col-md-4">
+	                        <div class="post">
+	                            <div class="post-img-content">
+	                                <img src="images/portfolio/folio02.jpg" class="img-responsive" />
+	                                <div class="overlay">
+	                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
+	                                </div>
+	                            </div>
+	                            <div class="content">
+	                                <h2 class="post-title">Post Title</h2>
+	                                <div class="author">
+	                                    <i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> <time datetime="2014-01-20">April 11th, 2014</time>
+	                                </div>
+	                                <div>
+	                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+	                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+	                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+	                                </div>
+	                                <div class="read-more-wrapper">
+	                                    <a href="#" class="btn btn-outlined btn-primary">Read more</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-4">
+	                        <div class="post">
+	                            <div class="post-img-content">
+	                                <img src="images/portfolio/folio06.jpg" class="img-responsive" />
+	                                <div class="overlay">
+	                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
+	                                </div>
+	                            </div>
+	                            <div class="content">
+	                                <h2 class="post-title">Post Title</h2>
+	                                <div class="author">
+	                                    <i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> <time datetime="2014-01-20">April 11th, 2014</time>
+	                                </div>
+	                                <div>
+	                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+	                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+	                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+	                                </div>
+	                                <div class="read-more-wrapper">
+	                                    <a href="#" class="btn btn-outlined btn-primary">Read more</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-4">
+	                        <div class="post">
+	                            <div class="post-img-content">
+	                                <img src="images/portfolio/folio11.jpg" class="img-responsive" />
+	                                <div class="overlay">
+	                                    <a class="preview btn btn-outlined btn-primary" href="#"><i class="fa fa-link"></i></a>          
+	                                </div>
+	                            </div>
+	                            <div class="content">
+	                                <h2 class="post-title">Post Title</h2>
+	                                <div class="author">
+	                                    <i class="fa fa-user"></i> By <b>Author</b> | <i class="fa fa-clock-o"></i> <time datetime="2014-01-20">April 11th, 2014</time>
+	                                </div>
+	                                <div>
+	                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+	                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+	                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+	                                </div>
+	                                <div class="read-more-wrapper">
+	                                    <a href="#" class="btn btn-outlined btn-primary">Read more</a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+                    </div>                              
+                </div>
+       		</section>
+
+            <!--<section id="pricing" class="white">-->
+                <!--<div class="container">-->
+                    <!--<div class="center gap fade-down section-heading">-->
+                        <!--<h2 class="main-title">So, How Much?</h2>-->
+                        <!--<hr>-->
+                        <!--<p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>-->
+                    <!--</div>  -->
+                    <!--<div class="gap"></div>-->
+                    <!--<div id="pricing-table" class="row">-->
+                        <!--<div class="col-md-3 col-xs-6 flip-in">-->
+                            <!--<ul class="plan plan1">-->
+                                <!--<li class="plan-name">-->
+                                    <!--<h3>Basic</h3>-->
+                                <!--</li>-->
+                                <!--<li class="plan-price">-->
+                                    <!--<div>-->
+                                        <!--<span class="price"><sup>$</sup>10</span>-->
+                                        <!--<small>month</small>-->
+                                    <!--</div>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<strong>5GB</strong> Storage-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<strong>1GB</strong> RAM-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<strong>400GB</strong> Bandwidth-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<strong>10</strong> Email Address-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<strong>Forum</strong> Support-->
+                                <!--</li>-->
+                                <!--<li class="plan-action">-->
+                                    <!--<a href="#" class="btn btn-outlined btn-primary btn-md btn-white">Signup</a>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                        <!--</div>&lt;!&ndash;/.col-md-3&ndash;&gt;-->
+                        <!--<div class="col-md-3 col-xs-6 flip-in">-->
+                            <!--<ul class="plan plan2 featured">-->
+                                <!--<li class="plan-name">-->
+                                    <!--<h3>Standard</h3>-->
+                                <!--</li>-->
+                                <!--<li class="plan-price">-->
+                                    <!--<div>-->
+                                        <!--<span class="price"><sup>$</sup>20</span>-->
+                                        <!--<small>month</small>-->
+                                    <!--</div>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<strong>5GB</strong> Storage-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<strong>1GB</strong> RAM-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<strong>400GB</strong> Bandwidth-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<strong>10</strong> Email Address-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<strong>Forum</strong> Support-->
+                                <!--</li>-->
+                                <!--<li class="plan-action">-->
+                                    <!--<a href="#" class="btn btn-outlined btn-primary btn-md">Signup</a>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                        <!--</div>&lt;!&ndash;/.col-md-3&ndash;&gt;-->
+                        <!--<div class="col-md-3 col-xs-6 flip-in">-->
+                            <!--<ul class="plan plan3">-->
+                                <!--<li class="plan-name">-->
+                                    <!--<h3>Advanced</h3>-->
+                                <!--</li>-->
+                                <!--<li class="plan-price">-->
+                                    <!--<div>-->
+                                        <!--<span class="price"><sup>$</sup>40</span>-->
+                                        <!--<small>month</small>-->
+                                    <!--</div>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<strong>50GB</strong> Storage-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<strong>8GB</strong> RAM-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<strong>1024GB</strong> Bandwidth-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<strong>Unlimited</strong> Email Address-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<strong>Forum</strong> Support-->
+                                <!--</li>-->
+                                <!--<li class="plan-action">-->
+                                    <!--<a href="#" class="btn btn-outlined btn-primary btn-md btn-white">Signup</a>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                        <!--</div>&lt;!&ndash;/.col-md-3&ndash;&gt;-->
+                        <!--<div class="col-md-3 col-xs-6 flip-in">-->
+                            <!--<ul class="plan plan4">-->
+                                <!--<li class="plan-name">-->
+                                    <!--<h3>Mighty</h3>-->
+                                <!--</li>-->
+                                <!--<li class="plan-price">-->
+                                    <!--<div>-->
+                                        <!--<span class="price"><sup>$</sup>100</span>-->
+                                        <!--<small>month</small>-->
+                                    <!--</div>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<strong>50GB</strong> Storage-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<strong>8GB</strong> RAM-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<strong>1024GB</strong> Bandwidth-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<strong>Unlimited</strong> Email Address-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<strong>Forum</strong> Support-->
+                                <!--</li>-->
+                                <!--<li class="plan-action">-->
+                                    <!--<a href="#" class="btn btn-outlined btn-primary btn-md btn-white">Signup</a>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                        <!--</div>&lt;!&ndash;/.col-md-3&ndash;&gt;-->
+                    <!--</div>-->
+                    <!--<div class="gap"></div> -->
+                <!--</div>-->
+            <!--</section>-->
+
+
+        <div id="mapwrapper" style="width:100%;height:400px;"></div>
+
+        <script>
+            function myMap() {
+                var mapProp= {
+                    center:new google.maps.LatLng(51.508742,-0.120850),
+                    zoom:5,
+                };
+                var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+
+
+            <section id="contact" class="white">
+                <div class="container">
+                	<div class="gap"></div>
+                    <div class="center gap fade-down section-heading">
+                        <h2 class="main-title">Contactanos</h2>
+                        <hr>
+                        <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
+                    </div>    
+                    <div class="gap"></div>
+                    <div class="row">
+                        <div class="col-md-4 fade-up">
+                            <h3>Contacto</h3>
+                            <p><span class="fa fa-building-o"></span> Ave. El Campanario #99 Int c34, Querétaro, Qro.<br/>
+                                <span class="fa fa-phone"></span> 01800 8909522<br/>
+                                <span class="fa  fa-mail-forward"></span> <a href="#"> info@hapsburgconsulting.com</a><br/>
+                                <span class="fa fa-twitter"></span> <a href="#">@HapsburgConsulting</a> <br/>
+                                <span class="fa fa-facebook"></span> <a href="#">&nbsp;&nbsp;&nbsp;Hapsburg Consulting</a> <br/>
+                            </p>
+                        </div><!-- col -->
+                    
+                        <div class="col-md-8 fade-up">
+                            <h3>Mandanos un mensaje</h3>
+                            <br>
+                            <br>
+                            <div id="message"></div>
+                            <form method="post" action="sendemail.php" id="contactform">
+                                <input type="text" name="name" id="name" placeholder="Nombre Completo" />
+                                <input type="text" name="email" id="email" placeholder="Email"/>
+                                <input type="text" name="website" id="website" placeholder="Empresa" />
+                                <textarea name="comments" id="comments" placeholder="Mensaje"></textarea>
+                                <input class="btn btn-outlined btn-primary" type="submit" name="submit" value="Enviar" />
+                            </form>
+                        </div><!-- col -->
+                    </div><!-- row -->  
+                    <div class="gap"></div>         
+                </div>
+            </section>
         </div>
 
-        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
+    <div id="footer-wrapper">
+        <section id="bottom" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 about-us-widget">
+                        <h4>Misión</h4>
+                        <p>Was drawing natural fat respect husband. An as noisy an offer drawn blush place. These tried for way joy wrote witty. In mr began music weeks after at begin.</p>
+                    </div><!--/.col-md-3-->
 
-        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+                    <div class="col-md-3 col-sm-6 about-us-widget">
+                        <h4>Visión</h4>
+                        <p>Was drawing natural fat respect husband. An as noisy an offer drawn blush place. These tried for way joy wrote witty. In mr began music weeks after at begin.</p>
+                    </div><!--/.col-md-3-->
 
-      </div>
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Hapsburg Consulting</h4>
+                        <div>
+                            <ul class="arrow">
+                                <li><a href="#">Inicio</a></li>
+                                <li><a href="#">Directivos</a></li>
+                                <li><a href="#">Nuestros Clientes</a></li>
+                                <li><a href="#">Servicios</a></li>
+                            </ul>
+                        </div>
+                    </div><!--/.col-md-3-->
+
+                    <!--<div class="col-md-3 col-sm-6">-->
+                        <!--<h4>Latest Articles</h4>-->
+                        <!--<div>-->
+                            <!--<div class="media">-->
+                                <!--<div class="pull-left">-->
+                                    <!--<img class="widget-img" src="images/portfolio/folio01.jpg" alt="">-->
+                                <!--</div>-->
+                                <!--<div class="media-body">-->
+                                    <!--<span class="media-heading"><a href="#">Noticia A</a></span>-->
+                                    <!--<small class="muted">Posted 14 April 2014</small>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="media">-->
+                                <!--<div class="pull-left">-->
+                                    <!--<img class="widget-img" src="images/portfolio/folio02.jpg" alt="">-->
+                                <!--</div>-->
+                                <!--<div class="media-body">-->
+                                    <!--<span class="media-heading"><a href="#">Noticia B</a></span>-->
+                                    <!--<small class="muted">Posted 14 April 2014</small>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>  -->
+                    <!--</div>&lt;!&ndash;/.col-md-3&ndash;&gt;-->
+
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Contacto</h4>
+                        <address>
+                            <strong>Plaza 99</strong><br>
+                            Ave el Campanario #99,<br>
+                            Querétaro, Qro, 76146<br>
+                            <abbr title="Phone"><i class="fa fa-phone"></i></abbr> 01800 8909522
+                        </address>
+                    </div> <!--/.col-md-3-->
+                </div>
+            </div>
+        </section><!--/#bottom-->
+
+        <footer id="footer" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        &copy; 2018 <a target="_blank" href="#" title="Hapsburg Consluting SA de CV">Hapsburg Consulting </a>. All Rights Reserved.
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="pull-right">
+                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li><!--#gototop-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer><!--/#footer-->
     </div>
-  </section><!-- #intro -->
 
-  <main id="main">
 
-    <!--==========================
-      Featured Services Section
-    ============================-->
-    <section id="featured-services">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-4 box">
-            <i class="ion-ios-bookmarks-outline"></i>
-            <h4 class="title"><a href="">Lorem Ipsum Delino</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-          </div>
-
-          <div class="col-lg-4 box box-bg">
-            <i class="ion-ios-stopwatch-outline"></i>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-          </div>
-
-          <div class="col-lg-4 box">
-            <i class="ion-ios-heart-outline"></i>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-          </div>
-
-        </div>
-      </div>
-    </section><!-- #featured-services -->
-
-    <!--==========================
-      About Us Section
-    ============================-->
-    <section id="about">
-      <div class="container">
-
-        <header class="section-header">
-          <h3>Acerca de Nosotros</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </header>
-
-        <div class="row about-cols">
-
-          <div class="col-md-4 wow fadeInUp">
-            <div class="about-col">
-              <div class="img">
-                <img src="img/about-mission.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
-              </div>
-              <h2 class="title"><a href="#">Misión</a></h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="about-col">
-              <div class="img">
-                <img src="img/about-plan.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="ion-ios-list-outline"></i></div>
-              </div>
-              <h2 class="title"><a href="#">Nuestro Plan</a></h2>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="about-col">
-              <div class="img">
-                <img src="img/about-vision.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
-              </div>
-              <h2 class="title"><a href="#">Visión</a></h2>
-              <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- #about -->
-
-    <!--==========================
-      Services Section
-    ============================-->
-    <section id="services">
-      <div class="container">
-
-        <header class="section-header wow fadeInUp">
-          <h3>Servicios</h3>
-          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p>
-        </header>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-            <h4 class="title"><a href="">Asesoría Fiscal</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
-            <h4 class="title"><a href="">Aasesoría Financiera</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
-            <h4 class="title"><a href="">Consultorías</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
-            <h4 class="title"><a href="">Cursos</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
-            <h4 class="title"><a href="">Asesoría Legal</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-people-outline"></i></div>
-            <h4 class="title"><a href="">Servicio #6</a></h4>
-            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- #services -->
-
-    <!--==========================
-      Newsletter Action Section
-    ============================-->
-    <section id="call-to-action" class="wow fadeIn">
-      <div class="container text-center">
-        <h3>Suscribete a nuestro Newsletter</h3>
-        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a class="cta-btn" href="#">Suscribete</a>
-      </div>
-    </section><!-- #call-to-action -->
-
-    <!--==========================
-      Skills Section
-    ============================-->
-    <section id="skills">
-      <div class="container">
-
-        <header class="section-header">
-          <h3>Areas de trabajo</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
-        </header>
-
-        <div class="skills-content">
-
-          <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                <span class="skill">Outsourcing de Nominas <i class="val">100%</i></span>
-            </div>
-          </div>
-
-          <div class="progress">
-            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">CSS <i class="val">90%</i></span>
-            </div>
-          </div>
-
-          <div class="progress">
-            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
-            </div>
-          </div>
-
-          <div class="progress">
-            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-              <span class="skill">Photoshop <i class="val">55%</i></span>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!--==========================
-      Facts Section
-    ============================-->
-    <section id="facts"  class="wow fadeIn">
-      <div class="container">
-
-        <header class="section-header">
-          <h3>Datos de Hapsburg</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-        </header>
-
-        <div class="row counters">
-
-  				<div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">600</span>
-            <p>Nominas Mensuales</p>
-  				</div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">50</span>
-            <p>Años De Experiencia</p>
-  				</div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">10,000</span>
-            <p>Horas De Trabajo</p>
-  				</div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">6969</span>
-            <p>Nominas Totales</p>
-  				</div>
-
-  			</div>
-
-        <div class="facts-img">
-          <img src="img/facts-img.png" alt="" class="img-fluid">
-        </div>
-
-      </div>
-    </section><!-- #facts -->
-
-    <!--==========================
-      Portfolio Section
-    ============================-->
-    <section id="portfolio"  class="section-bg" >
-      <div class="container">
-
-        <header class="section-header">
-          <h3 class="section-title">Nuestras Empresas</h3>
-        </header>
-
-        <div class="row">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">Todas</li>
-              <li data-filter=".filter-consulting">Consulting</li>
-              <li data-filter=".filter-finanzas">Finanzas</li>
-              <li data-filter=".filter-web">Nominas</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-consulting wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/app1.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a class="text-uppercase" href="#">Consulting 1</a></h4>
-                <p>Consulting</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/web3.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">Nominas 3</a></h4>
-                <p>Nominas </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-consulting wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/app2.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a class="text-uppercase" href="#">Consulting2</a></h4>
-                <p>Consulting</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-finanzas wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/card2.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Finanzas 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">Finanzas 2</a></h4>
-                <p>Finanzas</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/web2.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">Nominas 2</a></h4>
-                <p>Nominas </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-consulting wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/app3.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a class="" href="#">Consulting 3</a></h4>
-                <p>Consulting</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-finanzas wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/card1.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Finanzas 1" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">Finanzas 1</a></h4>
-                <p>Finanzas</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-finanzas wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/card3.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Finanzas 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">Finanzas 3</a></h4>
-                <p>Finanzas</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/web1.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
-
-              <div class="portfolio-info">
-                <h4><a href="#">Nominas 1</a></h4>
-                <p>Nominas</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- #portfolio -->
-
-    <!--==========================
-      Clients Section
-    ============================-->
-    <section id="clients" class="wow fadeInUp">
-      <div class="container">
-
-        <header class="section-header">
-          <h3>Clientes</h3>
-        </header>
-
-        <div class="owl-carousel clients-carousel">
-          <img src="img/clients/client-1.png" alt="">
-          <img src="img/clients/client-2.png" alt="">
-          <img src="img/clients/client-3.png" alt="">
-          <img src="img/clients/client-4.png" alt="">
-          <img src="img/clients/client-5.png" alt="">
-          <img src="img/clients/client-6.png" alt="">
-          <img src="img/clients/client-7.png" alt="">
-          <img src="img/clients/client-8.png" alt="">
-        </div>
-
-      </div>
-    </section><!-- #clients -->
-
-    <!--==========================
-      Clients Section
-    ============================-->
-    <section id="testimonials" class="section-bg wow fadeInUp">
-      <div class="container">
-
-        <header class="section-header">
-          <h3>Sección Extra</h3>
-        </header>
-
-        <div class="owl-carousel testimonials-carousel">
-
-          <div class="testimonial-item">
-            <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-            <p>
-              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-            <p>
-              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-            <p>
-              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-            <p>
-              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="img/testimonial-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-            <p>
-              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- #testimonials -->
-
-    <!--==========================
-      Team Section
-    ============================-->
-    <section id="team">
-      <div class="container">
-        <div class="section-header wow fadeInUp">
-          <h3>Equipo</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 wow fadeInUp">
-            <div class="member">
-              <img src="img/300x300.png" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Ricardo Ignacio Schonbrunn Kuhne</h4>
-                  <span>Director General</span>
-                  <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="member">
-              <img src="img/300x300.png" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Adriana Bonnin Frias</h4>
-                  <span>Tesorera</span>
-                  <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="member">
-              <img src="img/300x300.png" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Edgar Rossell</h4>
-                  <span>Socio Director</span>
-                  <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="member">
-              <img src="img/300x300.png" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Ramón Cuevas Guerra</h4>
-                  <span>Director de Finanzas</span>
-                  <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- #team -->
-
-    <!--==========================
-      Contact Section
-    ============================-->
-    <section id="contact" class="section-bg wow fadeInUp">
-      <div class="container">
-
-        <div class="section-header">
-          <h3>Contacto</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-        </div>
-
-        <div class="row contact-info">
-
-          <div class="col-md-4">
-            <div class="contact-address">
-              <i class="ion-ios-location-outline"></i>
-              <h3>Dirección</h3>
-              <address>Av el Campanario, #99, Int c34, 76146, Querétaro, Qro.</address>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="contact-phone">
-              <i class="ion-ios-telephone-outline"></i>
-              <h3>Teléfono</h3>
-              <p><a href="tel:+018008909522">01800 8909522</a></p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="contact-email">
-              <i class="ion-ios-email-outline"></i>
-              <h3>Email</h3>
-              <p><a href="mailto:info@hapsburgconsulting.mx">info@hapsburgconsulting.mx</a></p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section><!-- #contact -->
-
-  </main>
-
-  <!--==========================
-    Footer
-  ============================-->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3>Hapsburg Consulting</h3>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Nuestras Otras Empresas</h4>
-            <ul>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#page-top">Hapsburg Consulting</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="www.adprh.mx">ADP - RH</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">VecoDico</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Coastal</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="www.myhumansite.com">HumanSite</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contactanos</h4>
-            <p>
-              Av el Campanario 99, Int c34 <br>
-              Querétaro, Qro 761462<br>
-              México <br>
-              <strong>Phone:</strong> 01800 8909522<br>
-              <strong>Email:</strong> info@hapsburgconsulting.mx<br>
-            </p>
-
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            </div>
-
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-newsletter">
-            <h4>Suscribete a nuestro Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit"  value="Subscribe">
-            </form>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>HAPSBURG CONSULTING</strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
-        -->
-      </div>
-    </div>
-  </footer><!-- #footer -->
-
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/counterup/counterup.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/isotope/isotope.pkgd.min.js"></script>
-  <script src="lib/lightbox/js/lightbox.min.js"></script>
-  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-
+    <script src="js/plugins.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>   
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script> 
+    <script src="js/init.js"></script>
 </body>
 </html>
