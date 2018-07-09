@@ -109,8 +109,10 @@ section h3.section-subheading {
   text-shadow: none;
 }
 
-.extra-padding-bot{
-  padding-bottom: 7vh;
+@media (min-width: 768px){
+  .extra-padding-bot{
+    padding-bottom: 7vh;
+  }
 }
 
 img::selection {
