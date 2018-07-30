@@ -1,7 +1,18 @@
-/* IMPACT - By DistinctiveThemes */
+/*PSEUDO ELEMENTS*/
+::-moz-selection {
+    color: white;
+    background-color: darkgray;
+    text-shadow: none;
+}
+
+::selection {
+    color: white;
+    background-color: darkgray;
+    text-shadow: none;
+}
 
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,300);
-
+/*REGULAR ELEMENTS*/
 .clearfix {
     zoom: 1;
 }

@@ -119,7 +119,7 @@ if(isMobile === false) {
         });
         jQuery('.counter').counterUp({
             delay: 10,
-            time: 100
+            time: 1000
         });
         jQuery('.fade-up').one('inview', function () {
             jQuery(this).addClass('animated fadeInUp appear');
