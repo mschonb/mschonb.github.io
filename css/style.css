@@ -1,7 +1,18 @@
-/* IMPACT - By DistinctiveThemes */
+/*PSEUDO ELEMENTS*/
+::-moz-selection {
+    color: white;
+    background-color: darkgray;
+    text-shadow: none;
+}
+
+::selection {
+    color: white;
+    background-color: darkgray;
+    text-shadow: none;
+}
 
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,300);
-
+/*REGULAR ELEMENTS*/
 .clearfix {
     zoom: 1;
 }
@@ -65,7 +76,9 @@ hr {
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #fff;
 }
-
+.center {
+    display: block;
+}
 .btn {
     font-weight: 400;
 }
@@ -723,6 +736,7 @@ ul.tag-cloud li {
     .navbar-inverse .navbar-brand{
         margin-top: 5px;
     }
+
 }
 
 .navbar-inverse .navbar-nav {
