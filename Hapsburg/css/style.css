@@ -2407,6 +2407,12 @@ img.author-box-image {
     overflow: hidden;
 }
 
+@media screen and (max-width: 990px){
+    #portfolio .portfolio-item{
+        margin-left: 25%;
+    }
+}
+
 #portfolio .portfolio-item figure {
     background: #000;
     overflow: hidden;
