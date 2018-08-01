@@ -2413,6 +2413,29 @@ img.author-box-image {
     }
 }
 
+@media screen and (max-width: 650px){
+    #portfolio .portfolio-item{
+        margin-left: 20vw;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #portfolio .portfolio-item{
+        margin-left: 10vw;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #portfolio .portfolio-item{
+        margin-left: 1.5vw;
+    }
+}
+@media screen and (max-width: 400px){
+    #portfolio .portfolio-item{
+        margin-left: 0vw;
+    }
+}
+
 #portfolio .portfolio-item figure {
     background: #000;
     overflow: hidden;
