@@ -1414,6 +1414,19 @@ ul.pagination > li:hover > a {
     color: #fff;
 }
 
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    width: inherit;
+}
+
+.flex-container>div {
+    color: white;
+
+}
+
 textarea#message {
     padding: 10px 15px;
     height: 219px;
@@ -1519,7 +1532,9 @@ img.author-box-image {
 
 /*  Content
 /*-----------------------------------------------------------------------------------*/
-
+#divide{
+    height: 250px;
+}
 #content-wrapper {
     padding: 0;
     z-index: 5;
@@ -1620,6 +1635,14 @@ img.author-box-image {
 
 .divider-section a {
     color: #f5f5f5;
+}
+
+.divider-section-dark {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    overflow: hidden;
+    display: block;
+    color: black;
 }
 
 
@@ -2405,6 +2428,11 @@ img.author-box-image {
     position: relative;
     height: 360px;
     overflow: hidden;
+}
+@media screen and (max-width: 1200px){
+    #portfolio .portfolio-item{
+        margin-left: 5%;
+    }
 }
 
 @media screen and (max-width: 990px){
