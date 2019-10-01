@@ -16,8 +16,9 @@ body {
 
 .btn-xl {
   padding: 1.25rem 2.5rem;
+  left: 50%;
+  margin-left: -75px;
 }
-
 .content-section {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
@@ -475,7 +476,7 @@ button:hover:after {
 }
 
 .grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.1); }
+.grow:hover { transform: scale(1.1); background-color: pink; border-color: pink; }
 .flip-card {
   background-color: transparent;
   width: 400px;
